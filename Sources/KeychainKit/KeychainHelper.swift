@@ -7,11 +7,17 @@
 
 import Foundation
 
-open class KeychainHelper {
+protocol DefaultKeychainHelper {
+    func save<T>(_ item: T, service: String, account: String) where T : Codable
+    func read<T>(service: String, account: String, type: T.Type) -> T? where T : Codable
+    func delete(service: String, account: String)
+}
+
+open class KeychainHelper: DefaultKeychainHelper {
 
     public static let shared = KeychainHelper()
 
-    public func save<T>(_ item: T, service: String, account: String = "vide") where T : Codable {
+    open func save<T>(_ item: T, service: String, account: String) where T : Codable {
         do {
             let data = try JSONEncoder().encode(item)
             save(data, service: service, account: account)
@@ -20,7 +26,7 @@ open class KeychainHelper {
         }
     }
 
-    open func read<T>(service: String, account: String = "vide", type: T.Type) -> T? where T : Codable {
+    open func read<T>(service: String, account: String, type: T.Type) -> T? where T : Codable {
         guard let data = read(service: service, account: account) else {
             return nil
         }
@@ -34,7 +40,7 @@ open class KeychainHelper {
         }
     }
 
-    open func delete(service: String, account: String = "vide") {
+    open func delete(service: String, account: String) {
         let query = [
             kSecAttrService: service,
             kSecAttrAccount: account,
