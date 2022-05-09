@@ -11,6 +11,7 @@
 		2CE0B4E32828EFC00007DB0D /* KeychainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE0B4D82828EFC00007DB0D /* KeychainKit.framework */; };
 		2CE0B4E82828EFC00007DB0D /* KeychainKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0B4E72828EFC00007DB0D /* KeychainKitTests.swift */; };
 		2CE0B4E92828EFC00007DB0D /* KeychainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE0B4DB2828EFC00007DB0D /* KeychainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CE0B4F32828EFEF0007DB0D /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0B4F22828EFEF0007DB0D /* KeychainHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		2CE0B4DC2828EFC00007DB0D /* KeychainKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KeychainKit.docc; sourceTree = "<group>"; };
 		2CE0B4E22828EFC00007DB0D /* KeychainKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeychainKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE0B4E72828EFC00007DB0D /* KeychainKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKitTests.swift; sourceTree = "<group>"; };
+		2CE0B4F22828EFEF0007DB0D /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				2CE0B4DB2828EFC00007DB0D /* KeychainKit.h */,
 				2CE0B4DC2828EFC00007DB0D /* KeychainKit.docc */,
+				2CE0B4F22828EFEF0007DB0D /* KeychainHelper.swift */,
 			);
 			path = KeychainKit;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE0B4F32828EFEF0007DB0D /* KeychainHelper.swift in Sources */,
 				2CE0B4DD2828EFC00007DB0D /* KeychainKit.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +400,7 @@
 		2CE0B4F02828EFC00007DB0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ND8XDKHKS;
@@ -412,6 +417,7 @@
 		2CE0B4F12828EFC00007DB0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ND8XDKHKS;
