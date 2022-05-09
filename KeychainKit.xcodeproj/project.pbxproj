@@ -54,12 +54,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C42089F2828F908002BD59E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0B4DA2828EFC00007DB0D /* KeychainKit */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2C4208A02828F93B002BD59E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0B4E62828EFC00007DB0D /* KeychainKitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		2CE0B4CE2828EFBF0007DB0D = {
 			isa = PBXGroup;
 			children = (
+				2C4208A02828F93B002BD59E /* Tests */,
+				2C42089F2828F908002BD59E /* Sources */,
 				2CE0B4F42828F21A0007DB0D /* Package.swift */,
-				2CE0B4DA2828EFC00007DB0D /* KeychainKit */,
-				2CE0B4E62828EFC00007DB0D /* KeychainKitTests */,
 				2CE0B4D92828EFC00007DB0D /* Products */,
 			);
 			sourceTree = "<group>";
