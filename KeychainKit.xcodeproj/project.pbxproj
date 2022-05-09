@@ -12,6 +12,7 @@
 		2CE0B4E82828EFC00007DB0D /* KeychainKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0B4E72828EFC00007DB0D /* KeychainKitTests.swift */; };
 		2CE0B4E92828EFC00007DB0D /* KeychainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE0B4DB2828EFC00007DB0D /* KeychainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CE0B4F32828EFEF0007DB0D /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0B4F22828EFEF0007DB0D /* KeychainHelper.swift */; };
+		2CE0B4F62828F21C0007DB0D /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0B4F42828F21A0007DB0D /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		2CE0B4E22828EFC00007DB0D /* KeychainKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeychainKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE0B4E72828EFC00007DB0D /* KeychainKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKitTests.swift; sourceTree = "<group>"; };
 		2CE0B4F22828EFEF0007DB0D /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		2CE0B4F42828F21A0007DB0D /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		2CE0B4CE2828EFBF0007DB0D = {
 			isa = PBXGroup;
 			children = (
+				2CE0B4F42828F21A0007DB0D /* Package.swift */,
 				2CE0B4DA2828EFC00007DB0D /* KeychainKit */,
 				2CE0B4E62828EFC00007DB0D /* KeychainKitTests */,
 				2CE0B4D92828EFC00007DB0D /* Products */,
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE0B4F62828F21C0007DB0D /* Package.swift in Sources */,
 				2CE0B4E82828EFC00007DB0D /* KeychainKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
