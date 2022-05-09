@@ -27,7 +27,7 @@ lane :deploy_release do |options|
     # TESTS
     run_tests(
       devices: ["iPhone 13"],
-      scheme: "KeychainKit")
+      scheme: "KeychainKit-Package")
     
     # MERGE
     Dir.chdir("../")
