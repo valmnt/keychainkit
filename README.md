@@ -4,10 +4,6 @@ KeychainKit is a Swift Framework used to store data in the keychain, only availa
 
 KeychainKit introduces new concepts like Helper.
 
-<div align="center">
-    <img src="https://gitlab.com/l4299/documentationstockage/-/raw/main/KeychainKit/keychainkit_LTS.png" alt="drawing" width="500"/>
-</div>
-
 # Documentation
 
 ## 1. KeychainHelper
